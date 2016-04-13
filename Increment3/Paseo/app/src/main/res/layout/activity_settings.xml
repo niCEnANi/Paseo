@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.naresh.paseo.Settings"
+    android:background="#3a4c56">
+
+
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:id="@+id/editText_changepwd"
+    android:textColorHint="#ffffff"
+    android:hint="Change password"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/editText_changemobile"
+    android:hint="Edit phone number"
+    android:textColorHint="#ffffff"
+    android:layout_below="@+id/editText_changepwd"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:id="@+id/editText_changeemail"
+    android:hint="Edit Email"
+    android:textColorHint="#ffffff"
+    android:layout_below="@+id/editText_changemobile"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Other details"
+    android:id="@+id/button11"
+    android:layout_below="@+id/editText_changeemail"
+    android:layout_centerHorizontal="true"
+    android:textColor="#ffffff"
+    android:background="#0e0808" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Emergency Contacts"
+    android:id="@+id/textView"
+    android:textColor="#db2929"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:layout_below="@+id/button11"
+    android:layout_marginTop="35dp" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editText_emname1"
+    android:layout_below="@+id/textView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:hint="Name"
+    android:textColorHint="#ffffff" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editText_emname2"
+    android:layout_below="@+id/editText_emname1"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:hint="Name"
+    android:textColorHint="#ffffff" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/editText_emnumb2"
+    android:layout_alignBottom="@+id/editText_emname2"
+    android:layout_toRightOf="@+id/editText_emname1"
+    android:layout_toEndOf="@+id/editText_emname1"
+    android:hint="Number"
+    android:textColorHint="#ffffff" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/editText_emnumb1"
+    android:layout_below="@+id/textView"
+    android:layout_toRightOf="@+id/editText_emname1"
+    android:layout_toEndOf="@+id/editText_emname1"
+    android:hint="Number"
+    android:textColorHint="#ffffff" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save"
+    android:id="@+id/button_save"
+    android:layout_below="@+id/editText_emname2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:textColor="#ffffff"
+    android:background="#0e0808"
+    android:onClick="updateDetails"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter Phone Number"
+        android:phoneNumber="true"
+        android:textColorHint="@color/abc_primary_text_material_dark"
+        android:layout_below="@+id/editText_emname2"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:textColorHint="@color/abc_primary_text_material_dark"
+        android:hint="Enter SMS"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Sms"
+        android:id="@+id/btnSendSMS"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+</RelativeLayout>
