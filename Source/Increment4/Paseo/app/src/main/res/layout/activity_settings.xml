@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.naresh.paseo.Settings"
+    android:background="#ffffff">
+
+
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:id="@+id/editText_changepwd"
+    android:hint="Change password"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/editText_changemobile"
+    android:hint="Edit phone number"
+    android:layout_below="@+id/editText_changepwd"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:id="@+id/editText_changeemail"
+    android:hint="Edit Email"
+    android:layout_below="@+id/editText_changemobile"
+    android:layout_centerHorizontal="true" />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Emergency Contacts"
+    android:id="@+id/textView"
+    android:textColor="#db2929"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:layout_alignEnd="@+id/editText_changeemail" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editText_emname1"
+    android:layout_below="@+id/textView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:hint="Name" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editText_emname2"
+    android:hint="Name"
+    android:layout_above="@+id/button_save"
+    android:layout_alignParentStart="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/editText_emnumb2"
+    android:hint="Number"
+    android:layout_alignTop="@+id/editText_emname2"
+    android:layout_toEndOf="@+id/editText_emname2" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/editText_emnumb1"
+    android:layout_below="@+id/textView"
+    android:layout_toRightOf="@+id/editText_emname1"
+    android:layout_toEndOf="@+id/editText_emname1"
+    android:hint="Number"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save"
+    android:id="@+id/button_save"
+    android:textColor="#fff"
+    android:background="#0e0808"
+    android:onClick="updateDetails"
+    android:layout_marginBottom="55dp"
+    android:layout_alignParentBottom="true"
+    android:layout_toStartOf="@+id/editText_emnumb2" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter Phone Number"
+        android:phoneNumber="true"
+
+        android:layout_below="@+id/editText_emname2"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+
+        android:hint="Enter SMS"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Sms"
+        android:id="@+id/btnSendSMS"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+</RelativeLayout>

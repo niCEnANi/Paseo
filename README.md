@@ -1,1 +1,3 @@
-# Paseo
+# ASE_S16_Team2
+
+PASEO is a carpooling android application with security measures to ensure that the user feels secured all times. We register the rider and the passenger and validate the details of the users by checking their Driver’s license, car details etc. Carpooling is a sharing of car journeys such that more than one person travel together in a car towards the same destination. Carpooling has proved to be a major triumph in reducing the emissions of greenhouse gases as it reduces the number of cars on road, further it has also proved to be a blessing to those who do not own a private car.
